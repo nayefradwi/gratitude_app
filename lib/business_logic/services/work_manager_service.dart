@@ -44,7 +44,6 @@ class WorkManagerService {
   void setNotificationSchedulesForInputReminder() {
     int timingOne = RandomNumberService.getInstance()
         .getRandomNumber(6, includedLowerLimit: 7);
-    print("timing one is: $timingOne");
     this.registerPeriodicInputReminder(Duration(seconds: timingOne));
   }
 
